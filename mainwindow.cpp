@@ -36,14 +36,14 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent)
 
     rstTXLineEdit->setMaxLength(3);
     rstRXLineEdit->setMaxLength(3);
-    rstTXLineEdit->setFixedWidth(25);
-    rstRXLineEdit->setFixedWidth(25);
-    nameLineEdit->setFixedWidth(150);
-    freqRXLineEdit->setFixedWidth(80);
-    freqTXLineEdit->setFixedWidth(80);
-    locatorLineEdit->setFixedWidth(45);
-    rxPwrLineEdit->setFixedWidth(50);
-    //comentLineEdit->setFixedWidth(350);
+//    rstTXLineEdit->setFixedWidth(35);
+//    rstRXLineEdit->setFixedWidth(35);
+//    nameLineEdit->setFixedWidth(150);
+//    freqRXLineEdit->setFixedWidth(80);
+//    freqTXLineEdit->setFixedWidth(80);
+//    locatorLineEdit->setFixedWidth(45);
+//    rxPwrLineEdit->setFixedWidth(50);
+//    comentLineEdit->setFixedWidth(350);
 
     grid->addWidget(rstTXLabel, 0, 0, 1, 1);
     grid->addWidget(rstRXLabel, 0, 1, 1, 1);
@@ -51,23 +51,23 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent)
     grid->addWidget(freqTXLabel, 0, 5, 1, 2);
     grid->addWidget(nameLabel, 2, 0, 1, 2);
     grid->addWidget(locatorLabel, 4, 0, 1, 2);
-    grid->addWidget(rxPwrLabel, 4, 2, 1, 2);
-    grid->addWidget(qthLabel, 2, 5, 1, 5);
+    grid->addWidget(rxPwrLabel, 4, 1, 1, 2);
+    grid->addWidget(qthLabel, 2, 4, 1, 5);
     grid->addWidget(comentLabel, 4, 4, 1, 6);
 
     grid->addWidget(rstTXLineEdit, 1, 0, 1, 1);
     grid->addWidget(rstRXLineEdit, 1, 1, 1, 1);
     grid->addWidget(freqRXLineEdit, 1, 8, 1, 2);
     grid->addWidget(freqTXLineEdit, 1, 5, 1, 2);
-    grid->addWidget(locatorLineEdit, 5, 0, 1, 2);
-    grid->addWidget(nameLineEdit, 3, 0, 1, 4);
-    grid->addWidget(rxPwrLineEdit, 5, 2, 1, 2);
-    grid->addWidget(qthLineEdit, 3, 5, 1, 5);
-    grid->addWidget(comentLineEdit, 5, 4, 1, 6);
+    grid->addWidget(locatorLineEdit, 5, 0, 1, 1);
+    grid->addWidget(nameLineEdit, 3, 0, 1, 2);
+    grid->addWidget(rxPwrLineEdit, 5, 1, 1, 1);
+    grid->addWidget(qthLineEdit, 3, 4, 1, 6);
+    grid->addWidget(comentLineEdit, 5, 3, 1, 7);
 
 //    grid->setSpacing(10);
-//    grid->setHorizontalSpacing(10);
-//    grid->setVerticalSpacing(15);
+    grid->setHorizontalSpacing(10);
+    grid->setVerticalSpacing(15);
     //grid->setColumnStretch(8,1);
 
 
